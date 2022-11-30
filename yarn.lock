@@ -761,9 +761,14 @@ vite@^3.2.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+vitepress-auto-nav-sidebar@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/vitepress-auto-nav-sidebar/-/vitepress-auto-nav-sidebar-0.0.5.tgz"
+  integrity sha512-UeJw60LEgVaDUoS3u3u9W+dPyinl8p6aMlDGNzEVwa5NP0tsSSwqiSZX2PcJ81J8KL6sYBmhbIdEUDt/6iFuPA==
+
 vitepress-plugin-simple-search@v1.2.1:
   version "1.2.1"
-  resolved "https://registry.yarnpkg.com/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.1.tgz#50fa5fa3466fd8bfe1ff7d9313578dbf0f2524af"
+  resolved "https://registry.npmjs.org/vitepress-plugin-simple-search/-/vitepress-plugin-simple-search-1.2.1.tgz"
   integrity sha512-sPbgsIuAwhja22Q78srGiib8nmAI4A2jsC6jL5xF1Vcw8qCn/Tv8eI5Ww0AWisC7aFICJYECn8obJOqvR+dBYA==
   dependencies:
     fs-extra "^10.1.0"

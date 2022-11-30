@@ -1,6 +1,4 @@
 ---
-title: Docs with VitePress
+title: test
 
 ---
-# Hello VitePress2
-# {{ $frontmatter.title }}

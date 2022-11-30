@@ -1,3 +1,18 @@
+/*
+import AutoNavPlugin from 'vitepress-auto-nav-sidebar'
+const { nav, sidebar } = AutoNavPlugin({
+    ignoreFolders: ["node_modules", "assets", "public", ".vitepress", "code", ".obsidian", "utils"], 
+    ignoreFiles: [''],
+    dirPrefix: 'test ',
+    filePrefix: 'test ',
+    showNavIcon:false,
+    showSideIcon:true,
+    isCollapse: true,
+    collapsed: true,
+    singleLayerNav:true,
+   // customParentFolderName: '/'
+  });
+*/
 export default {
     title: 'VitePress',
     description: 'Just playing around.',
@@ -17,14 +32,24 @@ export default {
 		sidebar: {
 			// '/cookbook/': sidebarCookbooks(),
 			'/': sidebar(),
-		}, 
+		},
+		nav: [
+                { text: 'home', link: '/guide' },
+                {
+                  text: 'Dropdown Menu',
+                  items: [
+                    { text: 'Item A', link: '/item-1' },
+                    { text: 'Item B', link: '/item-2' },
+                    { text: 'Item C', link: '/item-3' }
+                  ]
+                }
+              ],        
         footer: {
             message: 'Released under the MIT License.',
             copyright: 'Copyright © 2019-present Evan You'
           }       
       }
   }
-
 
   function sidebar() {
     return [
@@ -40,6 +65,7 @@ export default {
 				{
 					text: 'Quickstart Guide',
 					link: '/getting-started/quickstart',
+                 
 				},
             ]
 
@@ -63,3 +89,4 @@ export default {
         
     ]
   }
+ 
